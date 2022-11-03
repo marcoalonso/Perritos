@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C933480291422C50042ACD0 /* AsyncThrowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93347F291422C50042ACD0 /* AsyncThrowImageViewController.swift */; };
+		6C933482291425550042ACD0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C933481291425550042ACD0 /* ViewModel.swift */; };
 		6CDB1589290D6DA5007A36D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB1588290D6DA5007A36D6 /* AppDelegate.swift */; };
 		6CDB158B290D6DA5007A36D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB158A290D6DA5007A36D6 /* SceneDelegate.swift */; };
 		6CDB158D290D6DA5007A36D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB158C290D6DA5007A36D6 /* ViewController.swift */; };
 		6CDB1590290D6DA5007A36D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDB158E290D6DA5007A36D6 /* Main.storyboard */; };
 		6CDB1592290D6DA6007A36D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDB1591290D6DA6007A36D6 /* Assets.xcassets */; };
 		6CDB1595290D6DA6007A36D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDB1593290D6DA6007A36D6 /* LaunchScreen.storyboard */; };
+		6CDB159D290D6FC1007A36D6 /* PerritoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB159C290D6FC1007A36D6 /* PerritoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C93347F291422C50042ACD0 /* AsyncThrowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncThrowImageViewController.swift; sourceTree = "<group>"; };
+		6C933481291425550042ACD0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6CDB1585290D6DA5007A36D6 /* Perritos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perritos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDB1588290D6DA5007A36D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CDB158A290D6DA5007A36D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		6CDB1591290D6DA6007A36D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CDB1594290D6DA6007A36D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CDB1596290D6DA6007A36D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CDB159C290D6FC1007A36D6 /* PerritoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerritoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C9334832914257E0042ACD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CDB158C290D6DA5007A36D6 /* ViewController.swift */,
+				6C93347F291422C50042ACD0 /* AsyncThrowImageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C9334842914258E0042ACD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CDB158E290D6DA5007A36D6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6CDB157C290D6DA5007A36D6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +81,23 @@
 			children = (
 				6CDB1588290D6DA5007A36D6 /* AppDelegate.swift */,
 				6CDB158A290D6DA5007A36D6 /* SceneDelegate.swift */,
-				6CDB158C290D6DA5007A36D6 /* ViewController.swift */,
-				6CDB158E290D6DA5007A36D6 /* Main.storyboard */,
+				6C9334842914258E0042ACD0 /* View */,
 				6CDB1591290D6DA6007A36D6 /* Assets.xcassets */,
 				6CDB1593290D6DA6007A36D6 /* LaunchScreen.storyboard */,
 				6CDB1596290D6DA6007A36D6 /* Info.plist */,
+				6CDB159E290D702F007A36D6 /* Model */,
+				6C9334832914257E0042ACD0 /* Controller */,
 			);
 			path = Perritos;
+			sourceTree = "<group>";
+		};
+		6CDB159E290D702F007A36D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CDB159C290D6FC1007A36D6 /* PerritoModel.swift */,
+				6C933481291425550042ACD0 /* ViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +173,10 @@
 			files = (
 				6CDB158D290D6DA5007A36D6 /* ViewController.swift in Sources */,
 				6CDB1589290D6DA5007A36D6 /* AppDelegate.swift in Sources */,
+				6C933480291422C50042ACD0 /* AsyncThrowImageViewController.swift in Sources */,
 				6CDB158B290D6DA5007A36D6 /* SceneDelegate.swift in Sources */,
+				6C933482291425550042ACD0 /* ViewModel.swift in Sources */,
+				6CDB159D290D6FC1007A36D6 /* PerritoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

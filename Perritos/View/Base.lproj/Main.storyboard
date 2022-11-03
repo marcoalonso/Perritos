@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BXw-Tz-GAR">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dogs-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Perritos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perritos App 🐶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jev-Zw-7CO">
+                                <rect key="frame" x="20" y="72" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mFQ-5l-2Nr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-JB-FZa">
+                                <rect key="frame" x="20" y="132" width="350" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="zQv-fp-gtw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-ao-5CH">
+                                <rect key="frame" x="20" y="372" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eSJ-HM-K68"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ver más"/>
+                                <connections>
+                                    <action selector="verMasButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3SN-Sf-fwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6R7-ao-5CH" secondAttribute="trailing" constant="20" id="Re0-NB-tgB"/>
+                            <constraint firstItem="6R7-ao-5CH" firstAttribute="top" secondItem="E1f-JB-FZa" secondAttribute="bottom" constant="20" id="Rtw-xc-Zg3"/>
+                            <constraint firstItem="6R7-ao-5CH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="btI-zX-ucY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jev-Zw-7CO" secondAttribute="trailing" constant="20" id="kOl-cK-WO1"/>
+                            <constraint firstItem="E1f-JB-FZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kze-r3-yse"/>
+                            <constraint firstItem="E1f-JB-FZa" firstAttribute="top" secondItem="jev-Zw-7CO" secondAttribute="bottom" constant="20" id="rsU-T4-c3G"/>
+                            <constraint firstItem="jev-Zw-7CO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sBN-HA-Dij"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E1f-JB-FZa" secondAttribute="trailing" constant="20" id="scq-oR-oH5"/>
+                            <constraint firstItem="jev-Zw-7CO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="zmr-fk-fob"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dogs" image="brain.head.profile" catalog="system" id="d8K-zb-XPn"/>
+                    <connections>
+                        <outlet property="ImagenPerro" destination="E1f-JB-FZa" id="1nZ-m5-KQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.8461538461538" y="-28.436018957345969"/>
+        </scene>
+        <!--Random Image-->
+        <scene sceneID="oZi-pJ-7Nm">
+            <objects>
+                <viewController id="tLN-Sd-kXZ" customClass="AsyncThrowImageViewController" customModule="Perritos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eoJ-Mo-Suf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C0Y-Qt-Neg">
+                                <rect key="frame" x="25" y="107" width="340" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="YaK-aA-0xX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-bF-mIq">
+                                <rect key="frame" x="170" y="596.33333333333337" width="50" height="49.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MCh-VR-nj3"/>
+                                    <constraint firstAttribute="height" constant="50" id="Oxw-7l-qdm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " backgroundImage="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="getImageButton:" destination="tLN-Sd-kXZ" eventType="touchUpInside" id="8Z0-pb-Fz0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Kf-WH-XQ8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C0Y-Qt-Neg" firstAttribute="leading" secondItem="7Kf-WH-XQ8" secondAttribute="leading" constant="25" id="4w7-kI-9gf"/>
+                            <constraint firstItem="HL7-bF-mIq" firstAttribute="centerY" secondItem="eoJ-Mo-Suf" secondAttribute="centerY" constant="200" id="AGQ-Wb-fpQ"/>
+                            <constraint firstItem="C0Y-Qt-Neg" firstAttribute="top" secondItem="7Kf-WH-XQ8" secondAttribute="top" constant="60" id="ATd-jb-Feu"/>
+                            <constraint firstItem="HL7-bF-mIq" firstAttribute="centerX" secondItem="eoJ-Mo-Suf" secondAttribute="centerX" id="ch1-Dw-aS9"/>
+                            <constraint firstItem="7Kf-WH-XQ8" firstAttribute="trailing" secondItem="C0Y-Qt-Neg" secondAttribute="trailing" constant="25" id="e3r-cM-2qE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Random Image" image="photo.artframe" catalog="system" id="BGG-iw-40P"/>
+                    <connections>
+                        <outlet property="imageAsync" destination="C0Y-Qt-Neg" id="SKu-M5-Fmw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5M8-Gq-auy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787.6923076923076" y="-34.123222748815166"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uT6-Ev-5aP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BXw-Tz-GAR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E8i-6i-8l9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9t8-y7-xbq"/>
+                        <segue destination="tLN-Sd-kXZ" kind="relationship" relationship="viewControllers" id="7Vv-jb-tIJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30V-q1-UiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.61538461538461" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="brain.head.profile" catalog="system" width="120" height="128"/>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
