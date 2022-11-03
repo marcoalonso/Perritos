@@ -8,3 +8,7 @@ a simple app to show how to retrive data from an API to create UIImage, there ar
 
 <img width="382" alt="image" src="https://user-images.githubusercontent.com/49013250/199785575-59999d35-547b-46f9-a5f1-071955eaafdb.png">
 <img width="382" alt="image" src="https://user-images.githubusercontent.com/49013250/199785597-8e32e899-9e58-45e5-a63d-2e8b0a81fc58.png">
+
+
+<img width="711" alt="image" src="https://user-images.githubusercontent.com/49013250/199785756-5f245700-37cc-4009-aabb-b9d4cfdfb53e.png">
+
